@@ -2,9 +2,49 @@
 <html>
   <head>
     <title>Go Project - Front</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css" />
   </head>
   <body>
-    <h1>Simple HTML file</h1>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+
+    <!-- Container Start -->
+    <div class="container">
+
+      <div class="row text-center">
+        <h1>Simple HTML file</h1>
+        <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col">
+          <form>
+            Person's Rinkeby-Eth address:<br>
+            <input type="text" name="ethAddr"/>
+            <input type="submit" class="btn btn-success"/>
+          </form>
+        </div>
+
+        <div class="col">
+          <p id="detailsHeader">Research by address to get details ...<br></p>
+          <p id="detailsFirstname">Firstname: {String}</p><br>
+          <p id="detailsLastname">Lastname: {String}</p><br>
+          <p id="detailsDateOfBirth">DateOfBirth: {String}</p><br>
+          <p id="detailsNumberRelations">Relations: {Integer}</p><br>
+        </div>
+
+        <div class="col">
+          <p>Relations list for this address:</p>
+          <ul id="relationsList">
+            <li id="0">Relations 1</li>
+            <li id="1">Relations 2</li>
+            <li id="2">Relations ...</li>
+          </ul>
+        </div>
+
+      </div>
+
+    <!-- Container End -->
+    </div>
+
   </body>
 </html>
